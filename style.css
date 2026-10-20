@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: #eef2f3;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+.report-card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 750px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border: 3px double #1a365d;
+    padding: 30px;
+    position: relative;
+}
+.school-header {
+    text-align: center;
+    border-bottom: 2px solid #1a365d;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+.school-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 26px;
+    color: #1a365d;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.school-header p {
+    font-size: 13px;
+    color: #4a5568;
+    margin-top: 3px;
+}
+.report-title {
+    margin-top: 10px;
+    display: inline-block;
+    background: #1a365d;
+    color: #fff;
+    padding: 4px 20px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.student-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 25px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+.info-item {
+    font-size: 14px;
+    color: #2d3748;
+}
+.info-item strong {
+    color: #1a365d;
+}
+.marks-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.marks-table th {
+    background-color: #1a365d;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #1a365d;
+}
+.marks-table td {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cbd5e1;
+    text-align: center;
+    color: #334155;
+}
+.marks-table td.subject-name {
+    text-align: left;
+    font-weight: 500;
+}
+.marks-table tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+.status-pass {
+    color: #16a34a;
+    font-weight: 600;
+}
+.status-fail {
+    color: #dc2626;
+    font-weight: 600;
+}
+.summary-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: #f1f5f9;
+    border: 1px solid #cbd5e1;
+    padding: 12px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.summary-box h4 {
+    font-size: 11px;
+    color: #64748b;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.summary-box p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #0f172a;
+}
+.signatures {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding-top: 10px;
+}
+.signature-box {
+    text-align: center;
+    width: 200px;
+}
+.signature-line {
+    border-top: 1px dashed #64748b;
+    margin-bottom: 6px;
+}
+.signature-box span {
+    font-size: 12px;
+    color: #475569;
+    font-weight: 500;
+}
